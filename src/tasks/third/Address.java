@@ -1,30 +1,30 @@
 package tasks.third;
 
-public class Address extends Contact{
+public class Address extends Contact {
     private final String city;
     private final String address;
 
-    public Address(String name,String city,String address){
+    public Address(String name, String city, String address) {
         super(name);
-        this.city=city;
-        this.address=address;
+        this.city = city;
+        this.address = address;
     }
 
-    public String getCity(){
+    public String getCity() {
         return city;
     }
 
-    public String getAddress(){
+    public String getAddress() {
         return address;
     }
 
     @Override
-    public void sendMessage(){
-        System.out.println("Отправим открытку в город "+city+" по адресу: "+address);
+    public void sendMessage() {
+        System.out.println("Отправим открытку в город " + city + " по адресу: " + address);
     }
 
     @Override
-    public void print(){
+    public void print() {
         System.out.println("Город: " + getCity());
         System.out.println("Адрес: " + getAddress());
     }

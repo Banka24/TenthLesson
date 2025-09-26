@@ -1,14 +1,14 @@
 package tasks.second;
 
 // Дополните класс для проверки трудоустроенности пользователя
-public class EmploymentValidationRule extends ValidationRule<Boolean>{
+public class EmploymentValidationRule extends ValidationRule<Boolean> {
 
-    public EmploymentValidationRule(Boolean value){
-        super(value,"Ипотека выдается только трудоустроенным");
+    public EmploymentValidationRule(Boolean value) {
+        super(value, "Ипотека выдается только трудоустроенным");
     }
 
     @Override
-    public boolean isValid(){
+    public boolean isValid() {
         return value;
     }
 }

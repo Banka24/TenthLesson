@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import tasks.second.*;
 import tasks.third.*;
 
@@ -13,12 +14,12 @@ public class Main {
     private static final ContactBook<Address> relativesContactBook = new ContactBook<>();
 
     public static void main(String[] args) {
-        //firstTask();
-        //secondTask();
+        firstTask();
+        secondTask();
         thirdTask();
     }
 
-    private static void firstTask(){
+    private static void firstTask() {
         ArrayList<Double> list1 = new ArrayList<>();
         list1.add(1.0);
         list1.add(2.0);
@@ -36,7 +37,7 @@ public class Main {
         System.out.println("Во втором списке " + size(list2) + " элементов");
     }
 
-    private static void secondTask(){
+    private static void secondTask() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Заполните данные для ипотечной заявки и узнайте статус одобрения");
@@ -58,7 +59,7 @@ public class Main {
         mortgageRequest.validate();
     }
 
-    private static void thirdTask(){
+    private static void thirdTask() {
         fillBooks();
 
         Scanner scanner = new Scanner(System.in);
@@ -114,7 +115,7 @@ public class Main {
         relativesContactBook.addContact(new Address("Дедуля", "Воронеж", "Ленина, д.10"));
     }
 
-    private static <T> int size(List<T> list){
+    private static <T> int size(List<T> list) {
         return list.size();
     }
 }

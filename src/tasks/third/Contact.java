@@ -13,11 +13,11 @@ public class Contact {
         this.name = name;
     }
 
-    public void sendMessage(){
+    public void sendMessage() {
 
     }
 
-    public void print(){
+    public void print() {
 
     }
 }
